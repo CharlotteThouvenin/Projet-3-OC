@@ -505,6 +505,8 @@ footer h3 {
         display: inline-flex;
         width: 100%;
         justify-content: space-between;
+        height: 49px;
+
     }
 
     #iconLocalisation {
@@ -514,7 +516,7 @@ footer h3 {
     }
 
     #textLocalisation {
-        width: 335px;
+        width: 100%;
     }
 
     #mobileSubmit .fa-solid {
@@ -612,6 +614,6 @@ footer h3 {
 
     footer{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 }
