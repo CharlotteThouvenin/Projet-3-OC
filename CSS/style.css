@@ -59,6 +59,7 @@ a {
     color: var(--main-bg-color)
 }
 
+
 /****** Header ***********/
 
 header {
@@ -116,7 +117,6 @@ header nav a:hover {
     background-color: var(--main-bg-color);
     border: 1px solid var(--main-bg-color);
     box-sizing: border-box;
-    cursor: pointer;
 }
 
 #textLocalisation {
@@ -139,7 +139,7 @@ header nav a:hover {
     height: 49px;
     text-align: center;
     font-weight: bold;
-    cursor: pointer;
+    cursor:pointer;
 }
 .submitRecherche {
     width: 132px;
@@ -559,6 +559,11 @@ footer h3 {
         border-radius:0;
         padding: 30px 20px;
         box-sizing: border-box;
+        background-color: none;
+    }
+
+    .fondGris{
+        background-color: #ffffff;
     }
 
     /** Mobile Populaires **/
