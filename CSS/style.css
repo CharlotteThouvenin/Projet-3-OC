@@ -81,7 +81,8 @@ header nav {
 
 header nav a {
     margin-left: 40px;
-    padding-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid transparent;
 }
 
 header nav a:hover {
@@ -115,6 +116,7 @@ header nav a:hover {
     background-color: var(--main-bg-color);
     border: 1px solid var(--main-bg-color);
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 #textLocalisation {
@@ -128,29 +130,26 @@ header nav a:hover {
 }
 
 /*** bouton desktop et tablette ***/
-#submitRecherche {
-    width: 132px;
-    height: 49px;
-    padding: 15px 16px 15px 16px;
-    border-radius: 0px 15px 15px 0px;
+
+.formulaireRecherche button{
     border: 1px solid var(--main-color);
     background-color: var(--main-color);
-    color: #ffffff;
+    border-radius: 0px 15px 15px 0px;
+    color:#ffffff;
+    height: 49px;
     text-align: center;
     font-weight: bold;
+    cursor: pointer;
+}
+.submitRecherche {
+    width: 132px;
+    padding: 15px 16px 15px 16px;
 }
 
 /** bouton mobile caché **/
-#mobileSubmit {
-    height: 49px;
+.submitMobile {
     width: 49px;
-    border-radius: 15px;
-    border: 1px solid #0065FC;
     gap: 10px;
-    background-color: #0065FC;
-    color: #ffffff;
-    text-align: center;
-    font-weight: bold;
     padding: 15px 16px 15px 16px;
     display: none;
     font-size: 17px;
@@ -161,6 +160,8 @@ header nav a:hover {
 .filtres {
     padding-top: 35px;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -404,7 +405,8 @@ footer h3 {
 
     /** tablette Filtres **/
     .filtres {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: start;
     }
 
     .filtres h3 {
@@ -519,15 +521,15 @@ footer h3 {
         width: 100%;
     }
 
-    #mobileSubmit .fa-solid {
+    .submitMobile .fa-solid {
         color: #ffffff;
     }
 
-    #mobileSubmit {
+   .submitMobile {
         display: inline;
     }
 
-    #submitRecherche {
+    .submitRecherche {
         display: none;
     }
 
