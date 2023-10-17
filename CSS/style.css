@@ -88,6 +88,7 @@ header nav a {
 
 header nav a:hover {
     border-top: 2px solid var(--main-color);
+    color: var(--main-color);
 }
 
 
@@ -464,7 +465,7 @@ footer h3 {
         font-size: 16px;
     }
 
-    /***** tablette Footer *****/
+    /***** tablette Footer RAS *****/
 
 }
 
@@ -520,15 +521,7 @@ footer h3 {
     /** mobile formulaire recherche **/
 
     .formulaireRecherche {
-        display: inline-flex;
         width: 100%;
-        justify-content: space-between;
-        height: 49px;
-
-    }
-
-    #iconLocalisation {
-        width: 50px;
         height: 49px;
 
     }
@@ -613,6 +606,10 @@ footer h3 {
 
     .hebergements-cards a {
         width: 100%;
+    }
+
+    .hebergements h3{
+        margin-top: 20px;
     }
 
     /***** Mobile Activités *****/
