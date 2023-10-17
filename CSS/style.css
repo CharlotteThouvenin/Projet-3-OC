@@ -167,6 +167,7 @@ header nav a:hover {
     padding: 15px 16px 15px 16px;
     display: none;
     font-size: 17px;
+    color: #ffffff;
 }
 
 /****** Filtres ******/
@@ -530,9 +531,6 @@ footer h3 {
         width: 100%;
     }
 
-    .submitMobile .fa-solid {
-        color: #ffffff;
-    }
 
     .submitMobile {
         display: inline;
